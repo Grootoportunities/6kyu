@@ -8,9 +8,9 @@
 
 function sortArray(array) {
     const oddNumbers = array.filter(el => el % 2 !== 0).sort((a, b) => a - b)
-    const sortedArray = array.map(el => el % 2 !== 0 ? oddNumbers.shift() : el)
+    return array.map(el => el % 2 !== 0 ? oddNumbers.shift() : el)
 
-    return sortedArray
+
 }
 
 console.log(sortArray([5, 3, 2, 8, 1, 4]))

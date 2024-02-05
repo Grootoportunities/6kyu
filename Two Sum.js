@@ -11,6 +11,8 @@ function twoSum(numbers, target) {
                     indexArray.push(i)
                     indexArray.push(j)
                     break
+
+                    // return [i, j]
                 }
             }
         }
